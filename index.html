@@ -165,9 +165,9 @@
         // May need tuning
         const minDuration = 0;
 
-        if (pauseDuration < minDuration) {
-          trimmedDuration += pauseDuration;
-        }
+      //  if (pauseDuration < minDuration) {
+          trimmedDuration = pauseDuration;
+       // }
         // Write an M300 to play a note with the calculated pitch and duration
         gcode.push(
           `M300 P${Math.round(
