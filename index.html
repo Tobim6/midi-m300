@@ -64,7 +64,7 @@
 
     function playNote(frequency, duration) {
       // Simulate a startup time of 5ms
-      return (time) => { synth.triggerAttackRelease(frequency, duration - 5 / 1000, time) };
+      return (time) => { synth.triggerAttackRelease(frequency, duration - 0 / 1000, time) };
     }
 
     function togglePreview() {
