@@ -163,7 +163,7 @@
 
         // Marlin doesn't seem to deal with very short pauses accurately, so merge short pauses with the previous note.
         // May need tuning
-        const minDuration = 20 / 1000;
+        const minDuration = 5 / 1000;
 
         if (pauseDuration < minDuration) {
           trimmedDuration += pauseDuration;
